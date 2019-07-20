@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import {Link} from "react-router-dom";
 import {CLIENT_ROUTES} from "../constants";
 
 export default function Navigation(props){
@@ -6,8 +7,8 @@ export default function Navigation(props){
         <div className="navigation">
             <nav className="page-links">
                 <ol>
-                    <li className="page-link"><a href={CLIENT_ROUTES.HOME}>Home</a></li>
-                    <li className="page-link"><a href={CLIENT_ROUTES.CONTACT}>Contact</a></li>
+                    <li className="page-link"><Link to={CLIENT_ROUTES.HOME}>Home</Link></li>
+                    <li className="page-link"><Link to={CLIENT_ROUTES.CONTACT}>Contact</Link></li>
                 </ol>
             </nav>
         </div>
