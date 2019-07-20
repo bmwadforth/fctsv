@@ -1,0 +1,17 @@
+.navigation {
+    nav.page-links {
+        ol {
+            display: flex;
+            list-style: none;
+            li {
+                font-size: 24px;
+                margin: 0 1em 0;
+                list-style: none;
+                a {
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
