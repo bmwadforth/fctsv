@@ -1,0 +1,16 @@
+@import "_Variables";
+
+.footer {
+    footer {
+        .social-media {
+            display: flex;
+            flex-direction: column;
+            a {
+                width: 25px;
+                img {
+                    width: inherit;
+                }
+            }
+        }
+    }
+}
