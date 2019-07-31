@@ -22,5 +22,12 @@
                 }
             }
         }
+
+        a {
+            transition: color $transition-time ease-in-out;
+            &:hover {
+                color: #FFF;
+            }
+        }
     }
 }

@@ -11,10 +11,12 @@ function App() {
         <Router>
             <div className="fight-club">
                 <Navigation/>
-                <Switch>
-                    <Route exact path={CLIENT_ROUTES.HOME} component={Home}/>
-                    <Route path={CLIENT_ROUTES.CONTACT} component={Contact}/>
-                </Switch>
+                <div className="content">
+                    <Switch>
+                        <Route exact path={CLIENT_ROUTES.HOME} component={Home}/>
+                        <Route path={CLIENT_ROUTES.CONTACT} component={Contact}/>
+                    </Switch>
+                </div>
                 <Footer/>
             </div>
         </Router>
