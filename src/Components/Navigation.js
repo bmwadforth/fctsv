@@ -8,8 +8,8 @@ export default function Navigation(props){
             <nav className="page-links">
                 <ol>
                     <li className="page-link"><Link to={CLIENT_ROUTES.HOME}>Home</Link></li>
-                    <li className="page-link"><Link to={CLIENT_ROUTES.HOME}>Instructors</Link></li>
-                    <li className="page-link"><Link to={CLIENT_ROUTES.HOME}>About Us</Link></li>
+                    <li className="page-link"><Link to={CLIENT_ROUTES.INSTRUCTORS}>Instructors</Link></li>
+                    <li className="page-link"><Link to={CLIENT_ROUTES.ABOUT}>About Us</Link></li>
                     <li className="page-link"><Link to={CLIENT_ROUTES.CONTACT}>Contact</Link></li>
                 </ol>
             </nav>

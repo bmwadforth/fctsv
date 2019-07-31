@@ -1,4 +1,6 @@
 export const CLIENT_ROUTES = {
     HOME: "/",
-    CONTACT: "/contact"
+    CONTACT: "/contact",
+    INSTRUCTORS: "/instructors",
+    ABOUT: "/about"
 };
