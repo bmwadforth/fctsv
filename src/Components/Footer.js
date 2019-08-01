@@ -30,21 +30,7 @@ export default function Footer(props) {
           <p className="strong">Fight Club Jiu-Jitsu | Townsville 2019 ©</p>
         </div>
         <div className="social-media">
-          <Row col>
-            <Tile title="Trading Hours">
-              <p>Mon 03:00 pm – 08:00 pm</p>
-              <p>Tue 03:00 pm – 08:00 pm</p>
-              <p>Wed 03:00 pm – 08:00 pm</p>
-              <p>Thu 03:00 pm – 08:00 pm</p>
-              <p>Fri 03:00 pm – 08:00 pm</p>
-              <p className="strong">Sat 12:00 pm – 02:00 pm (Open Mat)</p>
-              <p>Sun Closed</p>
-              <br />
-              <p>Monday - Friday</p>
-              <p>Kids 4+ 4:15pm</p>
-              <p>Junior 8+ 5:00pm</p>
-              <p>Adults 6:00pm</p>
-            </Tile>
+          <Row>
             <Tile title="Social Media">
               <Icon
                 href="https://www.facebook.com/FightClubTownsville/"

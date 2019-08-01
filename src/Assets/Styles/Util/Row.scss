@@ -10,8 +10,4 @@
   & > * {
     flex: 1;
   }
-
-  &.squeeze {
-    @include wrap(2em, 10px);
-  }
 }

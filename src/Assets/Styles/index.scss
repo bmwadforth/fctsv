@@ -5,6 +5,7 @@ html {
     font-family: 'Roboto', sans-serif;
 
     body {
+        position: relative;
         margin: 0;
 
         h1, h2, h3 {
@@ -25,10 +26,10 @@ html {
     @import "Util/Row";
 
     .content {
-        //@include wrap();
+        @include wrap(0, 1em);
 
         .home {
-            position: relative;
+            display: block;
             .home-banner {
                 height: 100vh;                
                 background-image: url("../Vectors/grips.jpeg");
