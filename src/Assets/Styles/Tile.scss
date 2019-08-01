@@ -1,8 +1,17 @@
 @import "Variables";
 
 .tile {
+  margin: 0 1em;
   .title {
     h1 {
+      display: flex;
+      a {
+        margin-right: 10px;
+      }
+    }
+
+    img {
+      height: $tile-icon-size;
     }
   }
 
@@ -11,5 +20,4 @@
     p {
     }
   }
-
 }

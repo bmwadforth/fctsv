@@ -4,8 +4,10 @@ $primary: #db4034;
 
 $transition-time: 0.3s;
 
+$tile-icon-size: 30px;
+
 //Mixins
-@mixin wrap() {
+@mixin wrap($margin-top: 0, $margin-bottom: 0) {
     width: 70%;
-    margin: 0 auto;
+    margin: $margin-top auto $margin-bottom;
 }

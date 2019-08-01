@@ -14,7 +14,7 @@
   footer {
     @include wrap();
     display: flex;
-    padding: 1em;
+    padding: 1em 0 0;
 
     .stamp {
       flex: 2;

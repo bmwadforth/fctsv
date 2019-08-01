@@ -15,8 +15,8 @@ function App() {
                 <div className="content">
                     <Switch>
                         <Route exact path={CLIENT_ROUTES.HOME} component={Home}/>
-                        <Route exact path={CLIENT_ROUTES.INSTRUCTORS} component={InstructorList}/>
-                        <Route exact path={CLIENT_ROUTES.ABOUT} component={Home}/>
+                        <Route path={CLIENT_ROUTES.INSTRUCTORS} component={InstructorList}/>
+                        <Route path={CLIENT_ROUTES.ABOUT} component={Home}/>
                         <Route path={CLIENT_ROUTES.CONTACT} component={Contact}/>
                     </Switch>
                 </div>
