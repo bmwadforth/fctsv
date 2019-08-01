@@ -6,7 +6,7 @@ export default function Tile(props){
     return (
         <div className="tile">
             <div className="title">
-                <h1>{props.title}</h1>
+                <h2>{props.title}</h2>
             </div>
             <div className="content">
                 {props.children}

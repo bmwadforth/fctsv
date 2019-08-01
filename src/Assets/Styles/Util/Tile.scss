@@ -1,8 +1,12 @@
 @import "Variables";
 
 .tile {
+  margin-right: 2em;
+
   .title {
-    h1 {
+    margin-bottom: 10px;
+
+    h2 {
       display: flex;
       a {
         margin-right: 10px;
