@@ -5,7 +5,6 @@ import Tile from "./Util/Tile";
 export default function Contact(props) {
   return (
     <div className="contact">
-      <h1>Contact Us</h1>
       <Row>
         <Tile title="Trading Hours">
           <p>Mon 03:00 pm – 08:00 pm</p>

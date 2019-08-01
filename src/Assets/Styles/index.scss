@@ -21,13 +21,12 @@ html {
 
 .fight-club {
     @import "Navigation";
-    @import "Tile";
     @import "Footer";
+
+    @import "Util/Tile";
     @import "Util/Row";
 
     .content {
-        @include wrap(0, 1em);
-
         .home {
             display: block;
             .home-banner {
@@ -36,6 +35,12 @@ html {
                 background-repeat: no-repeat;
                 background-position: center center;
                 background-size: cover;
+            }
+        }
+
+        .contact {
+            p {
+                margin: 0;
             }
         }
     }

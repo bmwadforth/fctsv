@@ -14,11 +14,9 @@
   footer {
     @include wrap();
     display: flex;
-    padding: 1em 0 0;
 
     .stamp {
-      flex: 2;
-      margin-right: 50px;
+      flex: 1;
 
       img {
         margin: 0 0 25px;
@@ -26,7 +24,7 @@
     }
 
     .social-media {
-      flex: 8;
+      flex: 1;
       a {
         width: 35px;
         margin-right: 1em;
