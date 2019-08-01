@@ -1,0 +1,11 @@
+//Colors
+$navbar-background: #FFF;
+$primary: #db4034;
+
+$transition-time: 0.3s;
+
+//Mixins
+@mixin wrap() {
+    width: 70%;
+    margin: 0 auto;
+}

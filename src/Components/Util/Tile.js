@@ -1,20 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-export default function InformationTile(props){
+export default function Tile(props){
     return (
-        <section className="information-tile">
+        <div className="tile">
             <div className="title">
                 <h1>{props.title}</h1>
             </div>
             <div className="content">
-                <p>{props.content}</p>
+                {props.children}
             </div>
-        </section>
+        </div>
     )
 }
 
-InformationTile.propTypes = {
+Tile.propTypes = {
     title: PropTypes.string.isRequired,
-    content: PropTypes.string.isRequired
+    children: PropTypes.oneOf([PropTypes.object, PropTypes.array])
 };

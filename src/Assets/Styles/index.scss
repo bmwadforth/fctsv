@@ -1,15 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+@import "Variables";
 
 html {
     font-family: 'Roboto', sans-serif;
 
     body {
         margin: 0;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
     }
 }
 
 .fight-club {
     @import "Navigation";
-    @import "InformationTile";
+    @import "Tile";
     @import "Footer";
+    @import "Util/Row";
+
+    .content {
+        @include wrap();
+    }
 }

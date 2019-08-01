@@ -1,17 +1,14 @@
 import React from "react";
-import InformationTile from "./InformationTile";
+import Tile from "./Util/Tile";
 
 export default function Home(props) {
     return (
-        <div className="home">
-            <h1>Fight Club - Townsville</h1>
-            <sub>Brazilian Jiu-Jitsu</sub>
-
+        <div className="home"> 
             {/*Join Us Button That Takes User To Register Page*/}
 
-            <InformationTile title="Our Philosophy" content="WHAT BJJ MEANS TO US."/>
-            <InformationTile title="The Journey" content="FROM WHITE TO BLACK."/>
-            <InformationTile title="The History" content="FROM THE BEGINNING TO THE END."/>
+            <Tile title="Our Philosophy">
+            
+            </Tile>
         </div>
     );
 }
