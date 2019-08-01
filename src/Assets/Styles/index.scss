@@ -38,6 +38,10 @@ html {
             }
         }
 
+        .row, .wrap {
+            @include wrap(1em, 1em);
+        }
+
         .contact {
             p {
                 margin: 0;

@@ -13,18 +13,16 @@ function App() {
     <Router>
       <div className="fight-club">
         <Navigation />
-        <div className="main">
-          <div className="content">
-            <Switch>
-              <Route exact path={CLIENT_ROUTES.HOME} component={Home} />
-              <Route
-                path={CLIENT_ROUTES.INSTRUCTORS}
-                component={InstructorList}
-              />
-              <Route path={CLIENT_ROUTES.ABOUT} component={About} />
-              <Route path={CLIENT_ROUTES.CONTACT} component={Contact} />
-            </Switch>
-          </div>
+        <div className="content">
+          <Switch>
+            <Route exact path={CLIENT_ROUTES.HOME} component={Home} />
+            <Route
+              path={CLIENT_ROUTES.INSTRUCTORS}
+              component={InstructorList}
+            />
+            <Route path={CLIENT_ROUTES.ABOUT} component={About} />
+            <Route path={CLIENT_ROUTES.CONTACT} component={Contact} />
+          </Switch>
         </div>
         <Footer />
       </div>

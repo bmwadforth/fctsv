@@ -6,7 +6,7 @@ export default function Tile(props){
     return (
         <div className="tile">
             <div className="title">
-                <h1>{props.icon && <Icon src={props.icon}/>} {props.title}</h1>
+                <h1>{props.title}</h1>
             </div>
             <div className="content">
                 {props.children}
@@ -17,5 +17,5 @@ export default function Tile(props){
 
 Tile.propTypes = {
     title: PropTypes.string.isRequired,
-    children: PropTypes.oneOf([PropTypes.object, PropTypes.array])
+    children: PropTypes.oneOfType([PropTypes.object, PropTypes.array])
 };

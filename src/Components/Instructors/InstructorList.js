@@ -5,12 +5,12 @@ import Tile from "../Util/Tile";
 
 export default function InstructorList(props) {
   return (
-    <div className="instructor-list">
+    <div className="instructor-list wrap">
       <h1>Meet our Instructors</h1>
       <Row>
-        {[].map(instructor => {
+        {[{firstName: "Eric", lastName: "Lemoine"}, {firstName: "Eamon", lastName: "LastName"}].map(instructor => {
           return (
-            <Tile title={`${instructor.firstName} {instructor.lastName}`}>
+            <Tile title={`${instructor.firstName} ${instructor.lastName}`}>
               {" "}
               <Instructor bio="" image={""} />{" "}
             </Tile>
