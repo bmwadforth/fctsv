@@ -17,6 +17,9 @@ export default function Navigation(props) {
             <Link to={CLIENT_ROUTES.INSTRUCTORS}>Instructors</Link>
           </li>
           <li className="page-link">
+            <Link to={CLIENT_ROUTES.ABOUT}>Time Table</Link>
+          </li>
+          <li className="page-link">
             <Link to={CLIENT_ROUTES.ABOUT}>About Us</Link>
           </li>
           <li className="page-link">

@@ -4,12 +4,21 @@
   margin-right: 2em;
 
   .title {
-    margin-bottom: 10px;
+    display: flex;
+    margin-bottom: 5px;
 
     h2 {
       display: flex;
       a {
         margin-right: 10px;
+      }
+
+      span {
+        margin-right: 0.25em;
+        svg {
+          height: 30px;
+          width: 30px;
+        }
       }
     }
 
@@ -21,6 +30,7 @@
   .content {
     margin: 0;
     p {
+      margin: 0;
     }
   }
 }

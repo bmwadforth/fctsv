@@ -6,7 +6,6 @@ import Tile from "../Util/Tile";
 export default function InstructorList(props) {
   return (
     <div className="instructor-list">
-      <h1>Meet Our Instructors</h1>
       <Row>
         {[].map(instructor => {
           return (

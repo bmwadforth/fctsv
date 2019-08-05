@@ -1,17 +1,15 @@
 import React from "react";
 import Tile from "./Util/Tile";
 import Row from "./Util/Row";
-
-import Philosophy from "../Assets/Icons/socrates.svg";
-import Map from "../Assets/Icons/map.svg";
+import { ICON } from "./Util/Icon";
 
 export default function Home(props) {
   return (
     <div className="home">
       {/*Join Us Button That Takes User To Register Page*/}
       <div className="home-banner" />
-      <Row>
-        <Tile title="Our Philosophy" icon={Philosophy}>
+      <Row content>
+        <Tile title="Our Philosophy" icon={ICON.PHILOSOPHY}>
           <p>
             Fight Club Jiu Jitsu's mission is to provide it's members with the
             highest possible standards in Martial Arts training programs and by
@@ -23,7 +21,7 @@ export default function Home(props) {
             friendships
           </p>
         </Tile>
-        <Tile title="Your Journey" icon={Map}>
+        <Tile title="Your Journey" icon={ICON.JOURNEY}>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -35,7 +33,7 @@ export default function Home(props) {
           </p>
         </Tile>
 
-        <Tile title="Lorem Ipsum" icon={Map}>
+        <Tile title="Lorem Ipsum" icon={ICON.JOURNEY}>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -45,6 +43,18 @@ export default function Home(props) {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
+        </Tile>
+      </Row>
+
+      <Row content>
+        <Tile title="Why join us?">
+
+        </Tile>
+        <Tile title="What does it cost?">
+
+        </Tile>
+        <Tile title="">
+
         </Tile>
       </Row>
     </div>

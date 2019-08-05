@@ -2,8 +2,7 @@ import React from "react";
 import Logo from "../Assets/Vectors/logo.png";
 import Row from "./Util/Row";
 import Tile from "./Util/Tile";
-import { ReactComponent as Facebook } from "../Assets/Icons/facebook.svg";
-import { ReactComponent as Instagram } from "../Assets/Icons/instagram.svg";
+import Icon, { ICON } from "./Util/Icon";
 
 export default function Footer(props) {
   return (
@@ -11,10 +10,10 @@ export default function Footer(props) {
       <div className="social-line">
         <div className="social-icons">
           <a href="https://www.facebook.com/FightClubTownsville/">
-            <Facebook />
+            <Icon icon={ICON.FACEBOOK} />
           </a>
           <a href="https://www.instagram.com/fightclubtownsville/">
-            <Instagram />
+          <Icon icon={ICON.INSTAGRAM} />
           </a>
         </div>
       </div>

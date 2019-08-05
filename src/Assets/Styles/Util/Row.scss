@@ -9,4 +9,13 @@
   & > .tile {
     flex: 1;
   }
+
+  &.row-content {
+    height: 250px;
+
+    &:nth-child(even){
+      background-color: rgba(128, 128, 128, 0.3);
+    }
+
+  }
 }

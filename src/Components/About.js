@@ -1,13 +1,12 @@
 import React from "react";
 import Row from "./Util/Row";
 import Tile from "./Util/Tile";
-import Ethics from "../Assets/Icons/ethics.svg";
 
 export default function About(props) {
   return (
     <div className="about">
       <Row squeeze>
-        <Tile title="Code of Conduct" icon={Ethics}>
+        <Tile title="Code of Conduct">
           <ul>
             <li>
               Upon entering and leaving the dojo, bow to the instructor and

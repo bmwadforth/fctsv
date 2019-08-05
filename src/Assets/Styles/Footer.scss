@@ -6,8 +6,8 @@
   .social-line {
     height: 40px;
     width: 100%;
-    border-top: 2px solid black;
-    background-color: rgba(black, 0.8);
+    border-top: 2px solid rgba(#000, 0.9);
+    background-color: rgba(#FFF, 1);
 
     .social-icons {
       @include wrap();
@@ -23,7 +23,7 @@
           height: 30px;
           width: auto;
           path {
-            fill: white !important;
+            fill: black !important;
           }
         }
       }
@@ -39,7 +39,6 @@
   }
 
   footer {
-    @include wrap();
-    padding: 1em 0 10px;
+    @include wrap(1em, 1em);
   }
 }
