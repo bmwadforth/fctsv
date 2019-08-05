@@ -6,24 +6,29 @@
   .social-line {
     height: 40px;
     width: 100%;
-    border-bottom: 2px solid rgba(#FFF, 0.1);
     background-color: $primary;
 
     .social-icons {
-      @include wrap();
+      @include wrap-margin();
       display: flex;
       height: 100%;
       align-items: center;
+      border-bottom: 2px solid rgba(#fff, 0.1);
 
       a {
         margin-right: 2em;
         svg {
-          transition: fill $transition-time ease;
-
           height: 30px;
           width: auto;
           path {
-            fill: black !important;
+            transition: all $transition-time ease;
+            fill: #000 !important;
+          }
+
+          &:hover {
+            path {
+              fill: #fff !important;
+            }
           }
         }
       }
@@ -44,7 +49,7 @@
     .row {
       .tile {
         margin: 0 2em 0 0;
-        &:last-child{
+        &:last-child {
           margin: 0;
         }
       }

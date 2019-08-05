@@ -15,46 +15,40 @@ export default function Home(props) {
             highest possible standards in Martial Arts training programs and by
             why of this empower our students to achieve a healthier, happier,
             and more productive life through the martial arts. By creating a
-            safe, fun, and supportive environment, Fight Club provides it's
+            safe, fun, and supportive environment, Fight Club provides its
             students with everything they need to enjoy fitness and good health,
             confidence, mental strength, discipline, self-defense and lifelong
-            friendships
+            friendships.
           </p>
         </Tile>
         <Tile title="Your Journey" icon={ICON.JOURNEY}>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Your journey through jiu jitsu is one that takes courage,
+            commitment, determination, and discipline. Fight club jiu-jitsu will
+            encourage you to be the best you can be. Fight club will always
+            encourage you to work harder and become stronger. Through the hard
+            times and the good times, your journey through the world of
+            jiu-jitsu is guided by experienced practioners. Never give up.
           </p>
         </Tile>
       </Row>
 
       <Row content>
-      <Tile title="Our Facility" icon={ICON.GYM}>
+        <Tile title="Our Facility" icon={ICON.GYM}>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Our facility is built around providing an atmosphere that motivates
+            and encourages practioners to perform their best. We also want to create
+            an environment that welcomes people to try jiu-jitsu. High quality
+            mats are only the beginning.
           </p>
         </Tile>
         <Tile title="Your Benefit" icon={ICON.COST}>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            We're in this game for two things. Jiu-jitsu, and you. None of this
+            would be possible without those two components, and we appreciate
+            that. Our instructors are constantly seeking new ways to improve how
+            jiu-jitsu is delivered. We want you to learn more, improve your
+            skills, and enjoy fight club jiu-jitsu.
           </p>
         </Tile>
       </Row>
