@@ -6,8 +6,8 @@
   .social-line {
     height: 40px;
     width: 100%;
-    border-top: 2px solid rgba(#000, 0.9);
-    background-color: rgba(#FFF, 1);
+    border-bottom: 2px solid rgba(#FFF, 0.1);
+    background-color: $primary;
 
     .social-icons {
       @include wrap();
@@ -40,5 +40,14 @@
 
   footer {
     @include wrap(1em, 1em);
+
+    .row {
+      .tile {
+        margin: 0 2em 0 0;
+        &:last-child{
+          margin: 0;
+        }
+      }
+    }
   }
 }

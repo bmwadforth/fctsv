@@ -32,8 +32,10 @@ export default function Home(props) {
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </Tile>
+      </Row>
 
-        <Tile title="Lorem Ipsum" icon={ICON.JOURNEY}>
+      <Row content>
+      <Tile title="Our Facility" icon={ICON.GYM}>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -44,17 +46,16 @@ export default function Home(props) {
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </Tile>
-      </Row>
-
-      <Row content>
-        <Tile title="Why join us?">
-
-        </Tile>
-        <Tile title="What does it cost?">
-
-        </Tile>
-        <Tile title="">
-
+        <Tile title="Your Benefit" icon={ICON.COST}>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
         </Tile>
       </Row>
     </div>

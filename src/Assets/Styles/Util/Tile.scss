@@ -1,7 +1,11 @@
 @import "Variables";
 
 .tile {
-  margin-right: 2em;
+  margin: 2em 2em 0 0;
+
+  &:last-child {
+    margin: 2em 0 0 0;
+  }
 
   .title {
     display: flex;
