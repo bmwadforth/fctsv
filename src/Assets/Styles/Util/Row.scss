@@ -12,10 +12,5 @@
 
   &.row-content {
     height: 200px;
-
-    &:nth-child(even){
-      background-color: rgba(128, 128, 128, 0.1);
-    }
-
   }
 }

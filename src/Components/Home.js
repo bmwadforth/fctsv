@@ -2,12 +2,17 @@ import React from "react";
 import Tile from "./Util/Tile";
 import Row from "./Util/Row";
 import { ICON } from "./Util/Icon";
+import Video from "../Assets/Videos/fctsv.mp4";
 
 export default function Home(props) {
   return (
     <div className="home">
       {/*Join Us Button That Takes User To Register Page*/}
-      <div className="home-banner" />
+      <div className="home-banner">
+        <video autoPlay muted loop>
+            <source src={Video} type="video/mp4" />
+        </video>
+      </div>
       <Row content>
         <Tile title="Our Philosophy" icon={ICON.PHILOSOPHY}>
           <p>
