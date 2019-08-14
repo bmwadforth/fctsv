@@ -30,7 +30,7 @@ export default function Footer(props) {
               </a>
             </p>
             <p>
-              <strong>Phone:</strong> 0484 062 027
+              <strong>Phone:</strong> 0428 775 527
             </p>
             <p>
               <strong>Address:</strong> 50 Bamford Lane, Townsville - QLD,
