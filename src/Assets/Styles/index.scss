@@ -26,6 +26,8 @@ html {
     @import "Util/Tile";
     @import "Util/Row";
 
+    @import "Pages/Instructors";
+
     .content {
 
         .home {
@@ -35,6 +37,7 @@ html {
 
                 video {
                     display: block;
+                    opacity: 0.6;
                     width: 100%;
                     height: 800px;
                     object-fit: cover;
@@ -44,7 +47,15 @@ html {
         }
 
         .row {
-            @include wrap(1em, 1em);
+            @include wrap(1em, 2em);
+            .tile {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .content {
+                    text-align: center;
+                }
+            }
         }
 
         .contact {

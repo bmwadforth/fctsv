@@ -57,23 +57,6 @@ export default function Home(props) {
           </p>
         </Tile>
       </Row>
-
-      <Row content>
-        <Tile title="Kids BJJ" icon={null}>
-          <p>
-            Fight Club Townsville offers kids classes
-          </p>
-        </Tile>
-        <Tile title="Adults BJJ" icon={null}>
-          <p>
-            We're in this game for two things. Jiu-jitsu, and you. None of this
-            would be possible without those two components, and we appreciate
-            that. Our instructors are constantly seeking new ways to improve how
-            jiu-jitsu is delivered. We want you to learn more, improve your
-            skills, and enjoy fight club jiu-jitsu.
-          </p>
-        </Tile>
-      </Row>
     </div>
   );
 }
