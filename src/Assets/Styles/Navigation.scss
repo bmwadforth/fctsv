@@ -30,14 +30,21 @@
         list-style: none;
 
         a {
-          color: black;
+          color: $dark;
           text-decoration: none;
           padding: 0.5em;
+
           border-radius: $border-radius;
           transition: background-color $transition-time ease;
           &:hover {
             cursor: pointer;
-            background-color: rgba($primary, 0.2);
+            background-color: rgba($primary, 1);
+          }
+        }
+
+        &.page-link-active {
+          a {
+            background-color: rgba($primary, 1);
           }
         }
       }

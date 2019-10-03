@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 export default function Button(props){
     return (
-        <button className={`${props.size ? props.size : "medium"} ${props.status ? props.status : "default"}`}>{props.title}</button>
+        <button className={`${props.size ? props.size : "medium"} ${props.status ? props.status : "default"}`} onClick={e => props.onClick && props.onClick(e)}>{props.title}</button>
     )
 }
 

@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
 @import "Variables";
 
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 html {
     font-family: 'Roboto', sans-serif;
 
@@ -28,8 +32,18 @@ html {
     @import "Util/Button";
 
     @import "Pages/Instructors";
+    @import "Pages/About";
+    @import "Pages/Contact";
 
-    .content {
+    .main {
+        background-color: $dark;
+        color: #FFF;
+
+        .not-found {
+            @include wrap(4em, 4em);
+            background-color: $dark;
+            color: #FFF;
+        }
 
         .home {
             width: 100%;
@@ -46,17 +60,39 @@ html {
             }
 
             .row {
+                &:nth-child(odd){
+                    svg {
+                        path {
+                            fill: #FFF !important;
+                        }
+                    }
+                }
+
                 &:nth-child(even){
-                    background-color: rgba($primary, 0.1);
+                    background-color: rgba(#FFF, 1);
+                    color: $dark;
+                }
+
+                .register {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    text-align: center;
+
+                    button {
+                        border: 2px solid #FFF;
+
+                        &:hover {
+                            background-color: #FFF;
+                            color: $dark;
+                        }
+                    }
+
                 }
 
                 .tile {
                     display: flex;
                     flex-direction: column;
-                    align-items: center;
-                    .content {
-                        text-align: center;
-                    }
                 }
 
                 button {
@@ -66,9 +102,9 @@ html {
         }
 
         .row {
-            @include wrap(1em, 2em);
+            @include wrap(0.5em, 0.5em);
             &:last-child {
-                @include wrap(1em, 1em);
+                @include wrap(0.5em, 0.5em);
             }
         }
 

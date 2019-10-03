@@ -1,0 +1,55 @@
+@import "../Variables";
+
+.contact {
+    padding: 1em 0;
+
+    form {
+
+        .inquiry-meta {
+            input, select {
+                margin-right: 1em;
+                width: 250px;
+            }
+        }
+
+        input, select, textarea {
+            border: 2px solid #FFF;
+            background-color: rgba(#FFF, 1);
+
+            padding: 0.5em;
+            margin: 1em 0;
+            border-radius: $border-radius;
+            outline: none;
+
+            color: $dark;
+            &::placeholder {
+                color: $dark;
+            }
+
+            &:focus {
+                border: 2px solid $primary;
+            }
+        }
+
+        textarea {
+            height: 200px;
+            width: calc(500px + 1em);
+        }
+
+        button {
+            display: block;
+            margin: 1em 0;
+            height: 40px;
+            width: 150px;
+            font-size: 18px;
+            border: 2px solid #FFF;
+            color: #FFF;
+
+
+            &:hover {
+                background-color: #FFF;
+                color: $dark;
+            }
+        }
+    }
+}

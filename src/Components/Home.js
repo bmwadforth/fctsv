@@ -1,11 +1,18 @@
-import React from "react";
+import React, {useState} from "react";
 import Tile from "./Util/Tile";
 import Row from "./Util/Row";
 import {ICON} from "./Util/Icon";
 import Video from "../Assets/Videos/fctsv.mp4";
 import Button from "./Util/Button";
+import {Redirect} from "react-router-dom";
+import {CLIENT_ROUTES} from "../constants";
 
 export default function Home(props) {
+    const [register, setRegister] = useState(false);
+
+    if(register)
+        return <Redirect to={CLIENT_ROUTES.CONTACT} />;
+
     return (
         <div className="home">
             {/*Join Us Button That Takes User To Register Page*/}
@@ -62,24 +69,26 @@ export default function Home(props) {
             <Row content>
                 <Tile title="Kids Classes" icon={ICON.WRESTLING}>
                     <p>
-                        Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                        Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                        Lorem Ipsum Lorem Ipsum
+                        Our kids classes are designed specifically to teach your child discipline at a young age. Not
+                        only does jiu-jitsu give your child confidence, but it teaches your child life long lessons that
+                        are valuable as they grow older. Register interest below.
                     </p>
                 </Tile>
                 <Tile title="Adult Classes" icon={ICON.WRESTLING}>
                     <p>
-                        Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                        Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                        Lorem Ipsum Lorem Ipsum
+                        Our adult classes are designed to provide you with the knowledge and skills to better your
+                        jiu-jitsu. We teach a variety of skills and concepts. If you are a beginner and you don't know
+                        what to expect, register your interest below to come and experience what jiu-jitsu really is.
                     </p>
                 </Tile>
             </Row>
 
             <Row content>
-                <Tile title="Register Your Interest Today">
-                    <Button title="Register Now" size="large" status="default"/>
-                </Tile>
+                <div className="register">
+                    <Tile title="Register Your Interest Today">
+                        <Button title="Register Now" size="large" status="default" onClick={() => setRegister(true)}/>
+                    </Tile>
+                </div>
             </Row>
         </div>
     );
