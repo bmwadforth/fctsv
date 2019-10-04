@@ -1,6 +1,9 @@
 @import "../Variables";
 
 .about {
-    padding: 1em 0;
-    font-size: 18px;
+    padding: 1em 0 100px;
+
+    h2 {
+        color: $primary;
+    }
 }

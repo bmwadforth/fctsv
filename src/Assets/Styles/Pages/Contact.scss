@@ -1,23 +1,41 @@
 @import "../Variables";
 
 .contact {
-    padding: 1em 0;
+    padding: 1em 0 50px;
+
+    .tile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 
     form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .contact-form {
+            background-color: rgba(#FFF, 1);
+            padding: 1em;
+            border-radius: $border-radius;
+        }
+
+        h2 {
+            margin-bottom: 0.5em;
+        }
 
         .inquiry-meta {
+            display: flex;
             input, select {
-                margin-right: 1em;
-                width: 250px;
+                flex: 1;
             }
         }
 
         input, select, textarea {
-            border: 2px solid #FFF;
-            background-color: rgba(#FFF, 1);
-
+            border: 2px solid $dark;
             padding: 0.5em;
-            margin: 1em 0;
+            margin: 1em;
             border-radius: $border-radius;
             outline: none;
 
@@ -33,22 +51,22 @@
 
         textarea {
             height: 200px;
-            width: calc(500px + 1em);
+            width: calc(500px);
         }
 
         button {
             display: block;
-            margin: 1em 0;
+            margin: 1em auto;
             height: 40px;
             width: 150px;
             font-size: 18px;
-            border: 2px solid #FFF;
-            color: #FFF;
+            border: 2px solid $dark;
+            color: $dark;
 
 
             &:hover {
-                background-color: #FFF;
-                color: $dark;
+                background-color: $dark;
+                color: #FFF;
             }
         }
     }

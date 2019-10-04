@@ -3,15 +3,38 @@ import Row from "./Util/Row";
 import Tile from "./Util/Tile";
 
 export default function About(props) {
+    document.title = "Fight Club | Townsville - About";
+
     return (
         <div className="about">
             <Row col squeeze>
                 <Tile title="Fight Club Townsville">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Brazilian Jiu-Jitsu (BJJ) is one of the most effective, reality-based fighting systems in the
+                        world. Offering healthy exercise and living, BJJ builds and tests your strength, flexibility,
+                        and cardio in a way that few other disciplines can. BJJ builds great bodies and rewards it's
+                        students with discipline, dedication, focus, patience.
+
+                        Our Jiu Jitsu Class teaches the basic objectives of the main positions in Brazilian Jiu Jitsu.
+                        Each position is taught from both the offensive and the defensive perspectives. Warm up consists
+                        of drills to improve the athlete’s physical ability, directly relevant to Brazilian Jiu Jitsu.
+                        After technical instruction, students are paired up to begin isolated positional sparring; this
+                        type of live sparring allows for beginners to directly practice the techniques they learned that
+                        day by starting from the exact position taught in class. This goes along with free sparring.
+                        This ensures that techniques are introduced in a systematic manner that allows for a
+                        progressively deeper understanding of the objectives and movements associated with each
+                        position. In addition, students are taught principals that make the process of learning
+                        Brazilian Jiu Jitsu more efficient and they receive regular individual critique to improve their
+                        performance.
+                        <br/>
+                        <br/>
+                        Along Side our Gi class we also teach No-Gi Brazilian Jiu Jitsu also known as “Submission
+                        Wrestling”, applies all the same techniques and principles used in regular Gi Brazilian Jiu
+                        Jitsu. Although small variations are often necessary to transition between Gi and No-Gi, it is
+                        still important to train Gi Jiu Jitsu, even if you wish to compete entirely in No-Gi. Nearly all
+                        of the ADCC Champions (the largest No-Gi Brazilian Jiu Jitsu tournament) train predominately Gi.
+                        Marcelo Garcia, believed to be one of the best current No-Gi competitors in the world, trains Gi
+                        five days a week and No-Gi once a week. At Fight Club Jiu Jitsu, we have one day dedicated to
+                        No-Gi instruction. We compete in both Gi and No-Gi competitions.</p>
                 </Tile>
                 <Tile title="Code of Conduct">
                     <ul>
@@ -72,41 +95,60 @@ export default function About(props) {
                 </Tile>
             </Row>
             <Row squeeze>
-                <Tile title="Trading Hours">
+                <Tile title="Kids Classes">
                     <p>
-                        <strong>Mon:</strong> 03:00 pm – 08:00 pm
+                        Welcome to Kids Club, where self-defence techniques and fitness are integrated in a safe and fun
+                        environment. With Brazilian Jiu Jitsu Classes for 5+ and 8+ kids, Fight Club Jiu Jitsu's Junior
+                        Program is designed to insitill junior students with unshakable confidence through the
+                        reinforcement of good character.
+
+                        We take a 360 degree approach to a students wellness whilst offering the student the tools they
+                        need to effectively deal with bullying and harrassment in all its forms. Students should expect
+                        to gain the following benefits :
                     </p>
-                    <p>
-                        <strong>Tue:</strong> 03:00 pm – 08:00 pm
-                    </p>
-                    <p>
-                        <strong>Wed:</strong> 03:00 pm – 08:00 pm
-                    </p>
-                    <p>
-                        <strong>Thu:</strong> 03:00 pm – 08:00 pm
-                    </p>
-                    <p>
-                        <strong>Fri:</strong> 03:00 pm – 08:00 pm
-                    </p>
-                    <p>
-                        <strong>Sat:</strong> 12:00 pm – 02:00 pm (Open Mat)
-                    </p>
-                    <p>
-                        <strong>Sun:</strong> Closed
-                    </p>
+                    <ul>
+                        <li>Discipline</li>
+                        <li>Courtesy</li>
+                        <li>Self-Control and Awareness</li>
+                        <li>Self-Confidence</li>
+                        <li>Concentration</li>
+                        <li>Safety</li>
+                        <li>Teamwork</li>
+                        <li>Focus</li>
+                        <li>Dedication</li>
+                        <li>Self Defence</li>
+                        <li>Life skills that will help them to enjoy a healthy, happy and productive lifestyle</li>
+                    </ul>
                 </Tile>
-                <Tile title="Training Configuration">
+                <Tile title="Adult Classes">
                     <p>
-                        <strong>Monday - Friday</strong>
-                    </p>
-                    <p>
-                        <strong>Kids:</strong> 4+ 4:15pm
-                    </p>
-                    <p>
-                        <strong>Junior:</strong> 8+ 5:00pm
-                    </p>
-                    <p>
-                        <strong>Adults:</strong> 6:00pm
+                        Brazilian Jiu-Jitsu (BJJ) is one of the most effective, reality-based fighting systems in the
+                        world. Offering healthy exercise and living, BJJ builds and tests your strength, flexibility,
+                        and cardio in a way that few other disciplines can. BJJ builds great bodies and rewards it's
+                        students with discipline, dedication, focus, patience.
+                        <br/>
+                        <br/>
+                        Our Jiu Jitsu Class teaches the basic objectives of the main positions in Brazilian Jiu Jitsu.
+                        Each position is taught from both the offensive and the defensive perspectives. Warm up consists
+                        of drills to improve the athlete’s physical ability, directly relevant to Brazilian Jiu Jitsu.
+                        After technical instruction, students are paired up to begin isolated positional sparring; this
+                        type of live sparring allows for beginners to directly practice the techniques they learned that
+                        day by starting from the exact position taught in class. This goes along with free sparring.
+                        This ensures that techniques are introduced in a systematic manner that allows for a
+                        progressively deeper understanding of the objectives and movements associated with each
+                        position. In addition, students are taught principals that make the process of learning
+                        Brazilian Jiu Jitsu more efficient and they receive regular individual critique to improve their
+                        performance.
+                        <br/>
+                        <br/>
+                        Along Side our Gi class we also teach No-Gi Brazilian Jiu Jitsu also known as “Submission
+                        Wrestling”, applies all the same techniques and principles used in regular Gi Brazilian Jiu
+                        Jitsu. Although small variations are often necessary to transition between Gi and No-Gi, it is
+                        still important to train Gi Jiu Jitsu, even if you wish to compete entirely in No-Gi. Nearly all
+                        of the ADCC Champions (the largest No-Gi Brazilian Jiu Jitsu tournament) train predominately Gi.
+                        Marcelo Garcia, believed to be one of the best current No-Gi competitors in the world, trains Gi
+                        five days a week and No-Gi once a week. At Fight Club Jiu Jitsu, we have one day dedicated to
+                        No-Gi instruction. We compete in both Gi and No-Gi competitions.
                     </p>
                 </Tile>
             </Row>

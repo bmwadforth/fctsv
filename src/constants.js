@@ -3,5 +3,6 @@ export const CLIENT_ROUTES = {
     CONTACT: "/contact",
     INSTRUCTORS: "/instructors",
     TIME_TABLE: "/schedule",
+    GALLERY: "/gallery",
     ABOUT: "/about"
 };

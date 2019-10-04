@@ -80,10 +80,11 @@ html {
                     text-align: center;
 
                     button {
-                        border: 2px solid #FFF;
+                        border: 2px solid $dark;
 
                         &:hover {
                             background-color: #FFF;
+                            border: 2px solid $dark;
                             color: $dark;
                         }
                     }

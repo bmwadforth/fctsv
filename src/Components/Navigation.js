@@ -21,6 +21,9 @@ export default function Navigation(props) {
           <li className={`page-link ${active === CLIENT_ROUTES.TIME_TABLE && "page-link-active"}`} onClick={() => setActive(CLIENT_ROUTES.TIME_TABLE)}>
             <Link to={CLIENT_ROUTES.TIME_TABLE}>Time Table</Link>
           </li>
+          <li className={`page-link ${active === CLIENT_ROUTES.GALLERY && "page-link-active"}`} onClick={() => setActive(CLIENT_ROUTES.GALLERY)}>
+            <Link to={CLIENT_ROUTES.GALLERY}>Gallery</Link>
+          </li>
           <li className={`page-link ${active === CLIENT_ROUTES.ABOUT && "page-link-active"}`} onClick={() => setActive(CLIENT_ROUTES.ABOUT)}>
             <Link to={CLIENT_ROUTES.ABOUT}>About Us</Link>
           </li>

@@ -5,6 +5,8 @@ import Tile from "../Util/Tile";
 import EricPhoto from "../../Assets/Vectors/eric-zoom.jpg";
 
 export default function InstructorList(props) {
+    document.title = "Fight Club | Townsville - Instructors";
+
     return (
         <div className="instructor-list">
             <Row>
