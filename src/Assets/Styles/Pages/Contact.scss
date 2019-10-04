@@ -70,4 +70,16 @@
             }
         }
     }
+
+    table {
+        padding: 1em;
+        margin: 0 0 1em;
+        width: 400px;
+        tr {
+            &:nth-child(odd){
+                background-color: #FFF;
+                color: $dark;
+            }
+        }
+    }
 }

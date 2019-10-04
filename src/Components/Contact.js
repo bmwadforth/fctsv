@@ -12,43 +12,6 @@ export default function Contact(props) {
     return (
         <div className="contact">
             <Row>
-                <Tile title="Trading Hours">
-                    <p>
-                        <span>Monday:</span> 03:00 pm – 08:00 pm
-                    </p>
-                    <p>
-                        <span>Tuesday:</span> 03:00 pm – 08:00 pm
-                    </p>
-                    <p>
-                        <span>Wednesday:</span> 03:00 pm – 08:00 pm
-                    </p>
-                    <p>
-                        <span>Thursday:</span> 03:00 pm – 08:00 pm
-                    </p>
-                    <p>
-                        <span>Friday:</span> 03:00 pm – 08:00 pm
-                    </p>
-                    <p>
-                        <span>Saturday:</span> 12:00 pm – 02:00 pm (Open Mat)
-                    </p>
-                    <p>
-                        <span>Sunday:</span> Closed
-                    </p>
-                    <br/>
-                    <br/>
-                    <p>
-                        <strong>Monday - Friday</strong>
-                    </p>
-                    <p>
-                        <span>Kids:</span> 4+ 4:15pm
-                    </p>
-                    <p>
-                        <span>Junior:</span> 8+ 5:00pm
-                    </p>
-                    <p>
-                        <span>Adults:</span> 6:00pm
-                    </p>
-                </Tile>
                 <Tile>
                     <form onSubmit={e => submitContact(e)}>
                         <h2>Contact Us</h2>
@@ -66,6 +29,59 @@ export default function Contact(props) {
                             <button type="submit">Submit</button>
                         </div>
                     </form>
+                </Tile>
+                <Tile title="Trading Hours">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Monday:</td>
+                            <td>03:00 pm – 08:00 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday:</td>
+                            <td>03:00 pm – 08:00 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday:</td>
+                            <td>03:00 pm – 08:00 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday:</td>
+                            <td>03:00 pm – 08:00 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Friday:</td>
+                            <td>03:00 pm – 08:00 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday:</td>
+                            <td>12:00 pm – 02:00 pm (Open Mat)</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday:</td>
+                            <td>Closed</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td colSpan={2} >Monday - Friday</td>
+                        </tr>
+                        <tr>
+                            <td>Kids:</td>
+                            <td>4+ 4:15pm</td>
+                        </tr>
+                        <tr>
+                            <td>Junior:</td>
+                            <td>8+ 5:00pm</td>
+                        </tr>
+                        <tr>
+                            <td>Adults:</td>
+                            <td>6:00pm</td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </Tile>
             </Row>
         </div>
