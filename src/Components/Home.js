@@ -19,9 +19,10 @@ export default function Home(props) {
             <div className="home-banner">
                 <div className="register">
                     <div className="cta">
-                        <h1 className="title">Adult and kids classes available</h1>
+                        <h1 className="title">A friendly, easygoing Brazilian Jiu-jitsu club</h1>
+                        <h2 className="subtitle">Adults, womens and kids classes available</h2>
                         <Button title="Register Now" size="large" status="primary" onClick={() => setRegister(true)}/>
-                        <a href="#read-more"><p className="read-more-link">Read more</p></a>
+                        <a href="#read-more"><p className="read-more-link">Find out about our philosophy and core values</p></a>
                     </div>
                 </div>
 
