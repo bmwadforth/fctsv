@@ -7,6 +7,7 @@
 
 html {
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 
     body {
         position: relative;
@@ -49,6 +50,28 @@ html {
             width: 100%;
             .home-banner {
                 width: 100%;
+
+                .register {
+                    position: absolute;
+                    z-index: 1;
+                    top: 15%;
+                    left: 20%;
+
+                    .title {
+                        font-size: 3vw;
+                        margin-bottom: 25px;
+                    }
+
+                    button {
+                        background-color: $primary;
+
+                        &:hover {
+                            border: 2px solid $light;
+                            color: $light;
+                            transform: scale(1.1);
+                        }
+                    }
+                }
 
                 video {
                     display: block;
@@ -103,9 +126,9 @@ html {
         }
 
         .row {
-            @include wrap(0.5em, 0.5em);
+            @include wrap(2em, 2em);
             &:last-child {
-                @include wrap(0.5em, 0.5em);
+                @include wrap(2em, 2em);
             }
         }
 
@@ -114,6 +137,15 @@ html {
                 margin: 0;
             }
         }
+
+        .read-more-link {
+            text-decoration: underline;
+
+            &:hover {
+             color: $primary;
+            }
+        }
+
     }
 }
 

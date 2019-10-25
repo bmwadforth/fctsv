@@ -1,47 +1,69 @@
-import React, {useState} from "react";
+import React, {useState, useRef} from "react";
 import Tile from "./Util/Tile";
 import Row from "./Util/Row";
 import {ICON} from "./Util/Icon";
 import Video from "../Assets/Videos/fctsv.mp4";
 import Button from "./Util/Button";
-import {Redirect} from "react-router-dom";
+import {Redirect, Link} from "react-router-dom";
 import {CLIENT_ROUTES} from "../constants";
 
 export default function Home(props) {
     const [register, setRegister] = useState(false);
+    const video = useRef(null);
 
     if (register)
         return <Redirect to={CLIENT_ROUTES.CONTACT}/>;
 
     return (
         <div className="home">
-            {/*Join Us Button That Takes User To Register Page*/}
             <div className="home-banner">
-                <video autoPlay muted loop>
+                <div className="register">
+                    <div className="cta">
+                        <h1 className="title">Adult and kids classes available</h1>
+                        <Button title="Register Now" size="large" status="primary" onClick={() => setRegister(true)}/>
+                        <a href="#read-more"><p className="read-more-link">Read more</p></a>
+                    </div>
+                </div>
+
+                <video autoPlay muted loop ref={video} onPlay={() => video.current.playbackRate = 0.5}>
                     <source src={Video} type="video/mp4"/>
                 </video>
             </div>
             <Row content>
+                <div id="read-more"/>
                 <Tile title="Our Philosophy" icon={ICON.PHILOSOPHY}>
                     <p>
-                        Fight Club Jiu Jitsu's mission is to provide it's members with the
-                        highest possible standards in Martial Arts training programs and by
-                        why of this empower our students to achieve a healthier, happier,
-                        and more productive life through the martial arts. By creating a
-                        safe, fun, and supportive environment, Fight Club provides its
-                        students with everything they need to enjoy fitness and good health,
-                        confidence, mental strength, discipline, self-defense and lifelong
-                        friendships.
+                        Fight Club Jiu-Jitsu's mission is to provide it's members with the highest possible standards in Martial Arts training programs.
                     </p>
+                    <p>
+                        Empowering our students to achieve a healthier, happier, and more productive life through the martial arts.
+                    </p>
+                    <p>
+                        By creating a safe, fun, and supportive environment, Fight Club provides its
+                        students with everything they need:
+                    </p>
+                    <ul>
+                        <li>to enjoy fitness and good health</li>
+                        <li>have self-confidence and mental strength</li>
+                        <li>be disciplined and defend themselves</li>
+                        <li>create lifelong friendships.</li>
+                    </ul>
                 </Tile>
                 <Tile title="Your Journey" icon={ICON.JOURNEY}>
+                    <p>Your journey through Jiu-jitsu is one that takes:</p>
+                    <ul>
+                        <li>courage</li>
+                        <li>commitment</li>
+                        <li>determination</li>
+                        <li>discipline</li>
+                    </ul>
                     <p>
-                        Your journey through jiu jitsu is one that takes courage,
-                        commitment, determination, and discipline. Fight club jiu-jitsu will
-                        encourage you to be the best you can be. Fight club will always
-                        encourage you to work harder and become stronger. Through the hard
-                        times and the good times, your journey through the world of
-                        jiu-jitsu is guided by experienced practioners. Never give up.
+                        Through the hard times and the good times, your journey through the world of
+                        Jiu-jitsu is guided by experienced practioners. <strong>Never give up.</strong>
+                    </p>
+                    <p>
+                        Fight club Jiu-jitsu will encourage you to be the best you can be, will always
+                        encourage you to work harder and become stronger.
                     </p>
                 </Tile>
             </Row>
@@ -50,28 +72,33 @@ export default function Home(props) {
                 <Tile title="Our Facility" icon={ICON.GYM}>
                     <p>
                         Our facility is built around providing an atmosphere that motivates
-                        and encourages practioners to perform their best. We also want to create
-                        an environment that welcomes people to try jiu-jitsu. High quality
-                        mats are only the beginning.
+                        and encourages practitioners to perform their best.
                     </p>
+                    <p>
+                        We also want to create an environment that welcomes people to try jiu-jitsu.
+                        High quality mats are only the beginning.
+                    </p>
+                    <iframe title="fight club location google maps" width="400" height="250" frameBorder="0" style={{border: "0"}}
+                            src="https://www.google.com/maps/embed/v1/place?q=fight%20club%20townsville&key=AIzaSyAOyxK7GljRqyuVqKhfgNq2F3ccOplK2Ko"
+                            allowFullScreen />
+
                 </Tile>
                 <Tile title="Your Benefit" icon={ICON.COST}>
                     <p>
                         We're in this game for two things. Jiu-jitsu, and you. None of this
                         would be possible without those two components, and we appreciate
-                        that. Our instructors are constantly seeking new ways to improve how
+                        that.
+                    </p>
+                    <p>
+                        Our instructors are constantly seeking new ways to improve how
                         jiu-jitsu is delivered. We want you to learn more, improve your
                         skills, and enjoy fight club jiu-jitsu.
                     </p>
-                </Tile>
-            </Row>
+                    <Link to={CLIENT_ROUTES.INSTRUCTORS}><p className="read-more-link">Meet our instructors</p></Link>
 
-            <Row content>
-                <div className="register">
-                    <Tile title="Register Your Interest Today">
-                        <Button title="Register Now" size="large" status="default" onClick={() => setRegister(true)}/>
-                    </Tile>
-                </div>
+                    <Button title="Register Now" size="large" status="primary" onClick={() => setRegister(true)}/>
+
+                </Tile>
             </Row>
         </div>
     );

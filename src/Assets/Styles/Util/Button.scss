@@ -13,6 +13,7 @@ button {
     }
 
     &.primary {
+        color: $light;
         border: 2px solid $primary;
         background-color: rgba($primary, 0.3);
     }
