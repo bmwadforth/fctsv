@@ -7,6 +7,7 @@ import {ReactComponent as Ethics} from "../../Assets/Icons/ethics.svg";
 import {ReactComponent as Gym} from "../../Assets/Icons/gym.svg";
 import {ReactComponent as Cost} from "../../Assets/Icons/cost.svg";
 import {ReactComponent as Wrestling} from "../../Assets/Icons/wrestling.svg";
+import {ReactComponent as Shaka} from "../../Assets/Icons/shaka.svg";
 
 export const ICON = {
     FACEBOOK: <Facebook />,
@@ -16,7 +17,8 @@ export const ICON = {
     ETHICS: <Ethics/>,
     GYM: <Gym/>,
     COST: <Cost/>,
-    WRESTLING: <Wrestling />
+    WRESTLING: <Wrestling />,
+    SHAKA: <Shaka />
 };
 
 export default function Icon(props){
