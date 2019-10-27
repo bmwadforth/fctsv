@@ -27,7 +27,7 @@ function App() {
                     <Switch>
                         <Route exact path={CLIENT_ROUTES.HOME} component={Home}/>
                         <Route path={CLIENT_ROUTES.INSTRUCTORS} component={InstructorList}/>
-                        <Route path={CLIENT_ROUTES.TIME_TABLE} component={NotFound}/>
+                        <Route path={CLIENT_ROUTES.TIME_TABLE} component={TimeTable}/>
                         <Route path={CLIENT_ROUTES.GALLERY} component={NotFound}/>
                         <Route path={CLIENT_ROUTES.ABOUT} component={About}/>
                         <Route path={CLIENT_ROUTES.CONTACT} component={Contact}/>
