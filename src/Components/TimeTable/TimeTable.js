@@ -3,6 +3,7 @@ import Row from "../Util/Row";
 import Tile from "../Util/Tile";
 import TimeTableItem from "./TimeTableItem";
 import moment, { months } from "moment";
+import ttable from "../../Assets/Vectors/timetable.jpg";
 
 const m = moment();
 const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -45,7 +46,7 @@ export default function TimeTable(props){
         <div className="time-table">
             <Row squeeze>
                 <Tile title="Our Schedule">
-                    {buildCalendar(date.month, date.year)}
+                    <img src={ttable} alt="Time Table"/>
                 </Tile>
             </Row>
         </div>

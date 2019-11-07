@@ -1,85 +1,51 @@
 @import "../Variables";
 
 .contact {
-    padding: 1em 0 50px;
+  padding: 1em 0 50px;
 
-    .tile {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
+  .tile {
+    margin: 0 2.5em;
 
-    form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    &:first-child {
+      form {
         .contact-form {
-            background-color: rgba(#FFF, 1);
-            padding: 1em;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: minmax(min-content, max-content);
+          grid-column-gap: 25px;
+
+          input, select, textarea {
+            border: 0;
+            width: 100%;
+            margin: 0.5em 0;
             border-radius: $border-radius;
-        }
+            padding: 0.5em 0 0.5em 0.5em;
+            font-size: 1em;
+          }
 
-        h2 {
-            margin-bottom: 0.5em;
-        }
+          textarea {
+            grid-column: 1 / 3;
+            width: 100%;
+            min-height: 150px;
+            max-width: 100%;
+          }
 
-        .inquiry-meta {
-            display: flex;
-            input, select {
-                flex: 1;
-            }
-        }
-
-        input, select, textarea {
-            border: 2px solid $dark;
-            padding: 0.5em;
-            margin: 1em;
-            border-radius: $border-radius;
-            outline: none;
-
+          button {
+            grid-column: 1 / 3;
+            background-color: $light;
             color: $dark;
-            &::placeholder {
-                color: $dark;
-            }
-
-            &:focus {
-                border: 2px solid $primary;
-            }
-        }
-
-        textarea {
-            height: 200px;
-            width: calc(500px);
-        }
-
-        button {
-            display: block;
+            padding: 0.85em;
+            width: 60%;
             margin: 1em auto;
-            height: 40px;
-            width: 150px;
-            font-size: 18px;
-            border: 2px solid $dark;
-            color: $dark;
-
+            border: none;
+            font-size: 1em;
 
             &:hover {
-                background-color: $dark;
-                color: #FFF;
+              background-color: $primary;
             }
+          }
         }
+      }
     }
-
-    table {
-        padding: 1em;
-        margin: 0 0 1em;
-        width: 400px;
-        tr {
-            &:nth-child(odd){
-                background-color: #FFF;
-                color: $dark;
-            }
-        }
-    }
+  }
 }
