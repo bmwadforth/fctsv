@@ -12,19 +12,15 @@ export default function Contact(props) {
     return (
         <div className="contact">
             <Row>
-                <Tile>
+                <Tile title="Contact Us">
                     <form onSubmit={e => submitContact(e)}>
-                        <h2>Contact Us</h2>
                         <div className="contact-form">
-                            <div className="inquiry-meta">
-                                <input type="email" placeholder="Email Address"/>
-                                <select>
-                                    <option value="register">Register</option>
-                                    <option value="inquiry">Inquiry</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-
+                            <input type="email" placeholder="Email Address"/>
+                            <select>
+                                <option value="register">Register</option>
+                                <option value="inquiry">Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
                             <textarea placeholder="Your Inquiry"/>
                             <button type="submit">Submit</button>
                         </div>
@@ -60,25 +56,6 @@ export default function Contact(props) {
                         <tr>
                             <td>Sunday:</td>
                             <td>Closed</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <table>
-                        <tbody>
-                        <tr>
-                            <td colSpan={2} >Monday - Friday</td>
-                        </tr>
-                        <tr>
-                            <td>Kids:</td>
-                            <td>4+ 4:15pm</td>
-                        </tr>
-                        <tr>
-                            <td>Junior:</td>
-                            <td>8+ 5:00pm</td>
-                        </tr>
-                        <tr>
-                            <td>Adults:</td>
-                            <td>6:00pm</td>
                         </tr>
                         </tbody>
                     </table>
